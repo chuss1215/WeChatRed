@@ -11,7 +11,9 @@
 -[BaseMsgContentLogicController DidAddMsg:]
 -[BaseMsgContentViewController addMessageNode:layout:addMoreMsg:]
 ```
+
 找到CMessageMgr类，分析CMessageMgr，用logify跟踪CMessageMgr，找到收红包消息的方法-(void)AsyncOnAddMsg:(NSString *)message MsgWrap:(CMessageWrap* )msgWrap ，这样当消息一到来就能实现自动抢红包了。
+
 4. 打开红包界面，用Reveal或者cycript找到当前控制器界面：WCRedEnvelopesReceiveHomeView，分析WCRedEnvelopesReceiveHomeView.h头文件，定位到处理红包的方法OnOpenRedEnvelopes。（该类方法不多，可以猜测到）
 5. 反汇编工具静态分析 -[WCRedEnvelopesReceiveHomeView OnOpenRedEnvelopes],找到WCRedEnvelopesReceiveHomeViewOpenRedEnvelopes方法
 6. 进一步分析WCRedEnvelopesReceiveHomeViewOpenRedEnvelopes方法，翻译成代码
