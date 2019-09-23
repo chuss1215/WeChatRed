@@ -1,0 +1,10 @@
+Package: com.yourcompany.wxredplugin
+Name: wxRedPlugin
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: linfen chu
+Author: linfen chu
+Section: Tweaks
+Version: 0.0.1-13+debug
+Installed-Size: 80
