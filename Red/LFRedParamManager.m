@@ -10,7 +10,7 @@
 
 @implementation LFRedParamManager
 
--(NSDictionary *)singProtoParam
+- (NSDictionary *)singProtoParam
 {
     NSMutableDictionary *paramDic = [NSMutableDictionary dictionary];
     [paramDic setValue:self.channelId forKey:@"channelId"];
@@ -19,7 +19,6 @@
     [paramDic setValue:self.nativeUrl forKey:@"nativeUrl"];
     [paramDic setValue:self.nickName forKey:@"nickName"];
     [paramDic setValue:self.sendId forKey:@"sendId"];
-    [paramDic setValue:self.sign forKey:@"sign"];
     [paramDic setValue:self.sessionUserName forKey:@"sessionUserName"];
     [paramDic setValue:self.timingIdentifier forKey:@"timingIdentifier"];
     return paramDic;

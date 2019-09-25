@@ -96,6 +96,7 @@
 		    mgrParams.nativeUrl = [[wrap m_oWCPayInfoItem] m_c2cNativeUrl];
 		    mgrParams.sessionUserName = wrap.m_nsFromUsr;
 		    mgrParams.sign = nativeUrlDict[@"sign"];
+            [[LFRedManager sharedInstance]addParams:mgrParams];
 
         }
     }
